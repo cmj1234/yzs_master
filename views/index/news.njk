@@ -1,0 +1,31 @@
+<a href="javascript:;" class="pull-right more-link">
+  查看更多
+</a>
+<h3 class="" style="margin-bottom: 36px">公司动态</h3>
+{% for item in [1,2,3,4,5] %}
+<div class=" dynamic-item">
+  <div class="dynamic-h" data-toggle="collapse" data-target="{{'#collapseExample'+item}}" aria-expanded="false">
+    <h4 class="dy-h4">这里是动态标题</h4>
+    <div class="dy-h4 dynamic-plus">
+      <span class="  glyphicon glyphicon-plus
+        "></span>
+    </div>
+
+  </div>
+  <div class="collapse" id="{{'collapseExample'+item}}">
+    <div class="dynamic-well">
+      <p class="dynamic-date">2018/12/1</p>
+      <p class="dynamic-text">  2018年6月21日，中国山东高速金融(0412.HK)在香港召开了2017/2018财年业绩发布会暨投资者推介会，披露截至2018年3月31日止全年业绩，期内溢利按年升321.3%至6.71亿元，同比增长3.2倍。对公司未来前景的披露中，中国山东高速金融将继续落实其策略，将自身发展成为具备所有牌照的领先金融集团，并进一步多元化业务，增强公司的盈利能力并为股东创造价值。</p>
+      <a class="btn  btn-lg more-btn" role="button">查看更多</a>
+    </div>
+  </div>
+</div>
+{% endfor %}
+<script>
+  // shown.bs.collapse
+  $('.collapse').on('show.bs.collapse hide.bs.collapse', function () {
+    $(this).parents('.dynamic-item').toggleClass('shown')
+    $(this).siblings('.dynamic-h').find('.dynamic-plus>.glyphicon').toggleClass('glyphicon-plus glyphicon-minus')
+
+  })
+</script>

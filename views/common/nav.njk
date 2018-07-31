@@ -1,0 +1,62 @@
+<!-- <ul class="nav-item-list nav nav-tabs nav-justified" id="mainNav">
+    <li class="nav-item">
+        <a class="nav-link" href="/">首页</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="/">机构专区</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="javascript:;" target="_blank">信息披露</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="javascript:;" target="_blank">关于我们</a>
+    </li>
+</ul> -->
+<ul class="layui-nav main-nav" lay-filter="">
+    <li class="layui-nav-item nav-item layui-this">
+        <a href="">首页</a>
+    </li>
+    <li class="nav-item-line layui-nav-item"></li>
+    <li class="layui-nav-item  nav-item">
+        <a href="">机构专区</a>
+    </li>
+    <li class="nav-item-line layui-nav-item"></li>
+    <li class="layui-nav-item nav-item">
+        <a href="">信息披露</a>
+        <dl class="layui-nav-child Information ">
+            <!-- 二级菜单 -->
+            <dd>
+                <a href="">企业资质</a>
+            </dd>
+            <dd>
+                <a href="">本所公告</a>
+            </dd>
+        </dl>
+    </li>
+    <li class="nav-item-line layui-nav-item"></li>
+    <li class="layui-nav-item nav-item">
+        <a href="javascript:;">关于我们</a>
+        <dl class="layui-nav-child about">
+            <!-- 二级菜单 -->
+            <dd>
+                <a href="">移动模块</a>
+            </dd>
+            <dd>
+                <a href="">后台模版</a>
+            </dd>
+            <dd>
+                <a href="">电商平台</a>
+            </dd>
+        </dl>
+    </li>
+
+</ul>
+
+<script>
+    //注意：导航 依赖 element 模块，否则无法进行功能性操作
+    layui.use('element', function () {
+        var element = layui.element;
+
+        //…
+    });
+</script>
